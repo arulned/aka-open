@@ -2,7 +2,7 @@
 Command line node client for the Akamai APIs
 
 ## Requirements
-*Follow https://github.com/akamai/AkamaiOPEN-edgegrid-node
+* Follow https://github.com/akamai/AkamaiOPEN-edgegrid-node
 
 ## Usage: 
 `./aka-open.js <http-method> <url> [@file] [--section=<section in the .edgerc file>]`
@@ -10,4 +10,4 @@ Command line node client for the Akamai APIs
 ## Example: 
 `./aka-open.js GET /url/of/the/resource`
 
-`/aka-open.js PUT /url/of/the/resource @putBody.json`
+`./aka-open.js PUT /url/of/the/resource @putBody.json`

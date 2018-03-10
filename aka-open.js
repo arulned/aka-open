@@ -27,6 +27,7 @@ require('sywac')
         }
     })
     .string('--section <section>', { desc: 'Section name in edgerc file', required: false })
+    .string('--edgerc <edgerc>', { desc: 'edgerc file path', required: false })
     .help('-h, --help')
     .version('-v, --version')
     .showHelpByDefault()
@@ -62,7 +63,7 @@ function get(options) {
 function run(options, method) {
     console.log('Options: ' + JSON.stringify(options));
     var eg = new EdgeGrid({
-        path: untildify('~/.edgerc'),
+        path: options.edgerc ? untildify(options.edgerc) : untildify('~/.edgerc'),
         section: options.section || 'default'
     });
 

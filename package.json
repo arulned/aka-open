@@ -1,0 +1,16 @@
+{
+  "name": "node-client",
+  "version": "1.0.0",
+  "description": "Akamai OPEN node client",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Arul Nedumaran",
+  "license": "ISC",
+  "dependencies": {
+    "edgegrid": "^3.0.4",
+    "sywac": "^1.2.0",
+    "untildify": "^3.0.2"
+  }
+}

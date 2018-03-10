@@ -9,4 +9,5 @@ Command line node client for the Akamai APIs
 
 ## Example: 
 `./aka-open.js GET /url/of/the/resource`
+
 `/aka-open.js PUT /url/of/the/resource @putBody.json`

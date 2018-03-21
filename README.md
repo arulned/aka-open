@@ -10,6 +10,8 @@ Command line node client for the Akamai APIs
 `$ ./aka-open <http-method> <url> [@file] [--edgerc=<location of the .edgerc file>] [--section=<section in the .edgerc file>]`
 
 ## Example: 
+These examples use 'default' section of the '.edgerc' file which is in the home directory of the user.
+
 `$ ./aka-open.js GET /url/of/the/resource`
 
 `$ ./aka-open.js PUT /url/of/the/resource @putBody.json`

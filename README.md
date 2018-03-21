@@ -6,6 +6,7 @@ Command line node client for the Akamai APIs
 
 ## Usage: 
 `$ chmod +x aka-open` to make it executable.
+
 `$ ./aka-open <http-method> <url> [@file] [--edgerc=<location of the .edgerc file>] [--section=<section in the .edgerc file>]`
 
 ## Example: 

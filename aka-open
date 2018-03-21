@@ -8,28 +8,30 @@ var fs = require('fs');
 // of the section with authorization to the client
 // you are calling (default section is 'default')
 require('sywac')
-    .command("get <url>", {
+    .command("get <uri>", {
         description: "Issues a GET request for the specified url",
         run: options => {
             call(options, 'GET');
         }
     })
-    .command("put <url>", {
+    .command("put <uri>", {
         description: "Issues a PUT request to the specified url",
         run: options => {
             call(options, 'PUT');
         }
     })
-    .command("post <url>", {
+    .command("post <uri>", {
         description: "Issues a POST request to the specified url",
         run: options => {
             call(options, 'POST');
         }
     })
+    .usage("aka-open get <uri> [options]\naka-open put <uri> [@payload.json] [options]\naka-open post <uri> [@payload.json] [options]")
     .string('--section <section>', { desc: 'Section name in edgerc file', required: false })
     .string('--edgerc <edgerc>', { desc: 'edgerc file path', required: false })
     .help('-h, --help')
     .version('-v, --version')
+    .epilogue("This command line utility uses the credentials from .edgerc file. Please check https://github.com/akamai/cli for setting up credentials.")
     .showHelpByDefault()
     .outputSettings({ maxWidth: 75 })
     .parseAndExit()

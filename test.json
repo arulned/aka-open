@@ -1,0 +1,18 @@
+{
+    "type": "website",
+    "configId": 7003,
+    "configVersion": 123,
+    "defaultFile": "NO_MATCH",
+    "filePaths": [
+        "/qa"
+    ],
+    "hostnames": [
+        "www.161andWorkflows.com","test.com"
+    ],
+    "isNegativeFileExtensionMatch": false,
+    "isNegativePathMatch": false,
+    "securityPolicy": {
+        "policyId": "addd_13671"
+    },
+    "targetId": 1391991
+}

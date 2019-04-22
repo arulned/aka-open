@@ -9,8 +9,8 @@
   "author": "Arul Nedumaran",
   "license": "ISC",
   "dependencies": {
-    "edgegrid": "^3.0.4",
-    "sywac": "^1.2.0",
-    "untildify": "^3.0.2"
+    "edgegrid": "^3.0.6",
+    "sywac": "^1.2.1",
+    "untildify": "^3.0.3"
   }
 }
